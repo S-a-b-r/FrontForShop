@@ -27,53 +27,15 @@
           <div class="col-xl-12">
             <div class="product-categories-one__inner">
               <ul>
-                <li><a href="#0" class="img-box">
-                  <div class="inner"><img src="src/assets/images/shop/product-categories-v1-img1.png"
-                                          alt=""/></div>
+                <li v-for="brewery in topBreweries"><a href="#0" class="img-box">
+                  <div class="inner">
+                    <img :src="brewery.logo" alt=""/>
+                  </div>
                 </a>
                   <div class="title"><a href="#0">
-                    <h6>Accessories</h6>
-                  </a></div>
-                </li>
-                <li><a href="#0" class="img-box">
-                  <div class="inner"><img src="src/assets/images/shop/product-categories-v1-img2.png"
-                                          alt=""/></div>
-                </a>
-                  <div class="title"><a href="#0">
-                    <h6>Furnitures</h6>
-                  </a></div>
-                </li>
-                <li><a href="#0" class="img-box">
-                  <div class="inner"><img src="src/assets/images/shop/product-categories-v1-img3.png"
-                                          alt=""/></div>
-                </a>
-                  <div class="title"><a href="#0">
-                    <h6>Jewellery</h6>
-                  </a></div>
-                </li>
-                <li><a href="#0" class="img-box">
-                  <div class="inner"><img src="src/assets/images/shop/product-categories-v1-img4.png"
-                                          alt=""/></div>
-                </a>
-                  <div class="title"><a href="#0">
-                    <h6>Shoes</h6>
-                  </a></div>
-                </li>
-                <li><a href="#0" class="img-box">
-                  <div class="inner"><img src="src/assets/images/shop/product-categories-v1-img5.png"
-                                          alt=""/></div>
-                </a>
-                  <div class="title"><a href="#0">
-                    <h6>Electronics</h6>
-                  </a></div>
-                </li>
-                <li><a href="#0" class="img-box">
-                  <div class="inner"><img src="src/assets/images/shop/product-categories-v1-img6.png"
-                                          alt=""/></div>
-                </a>
-                  <div class="title"><a href="#0">
-                    <h6>Fashion</h6>
-                  </a></div>
+                    <h6>{{brewery.title}}</h6>
+                  </a>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -2178,9 +2140,19 @@ export default {
     $(document).trigger('changed')
     this.getProducts();
     this.getFilterList();
+    this.getTopBreweries();
   },
 
   methods: {
+    getTopBreweries(){
+      this.axios.get('http://shop/api/top-breweries').then(
+          res => {
+            this.topBreweries = res.data.data;
+          }).finally(v => {
+        $(document).trigger('changed')
+      });
+    },
+
     getProductsByFilter() {
       let prices = $('#priceRange').val();
 
@@ -2194,24 +2166,24 @@ export default {
       }).then(
           res => {
             this.products = res.data.data;
-            console.log(this.products);
           }
       )
           .finally(v => {
             $(document).trigger('changed')
           });
     },
+
     getProducts() {
       this.axios.get('http://shop/api/products').then(
           res => {
             this.products = res.data.data;
-            console.log(this.products);
           }
       )
           .finally(v => {
             $(document).trigger('changed')
           });
     },
+
     getFilterList(){
       this.axios.get('http://shop/api/filters').then(
           res => {
@@ -2238,6 +2210,7 @@ export default {
 
   data() {
     return {
+      topBreweries: [],
       products: [],
       filterList: [],
       categories: [],
