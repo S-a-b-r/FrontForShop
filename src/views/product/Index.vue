@@ -1,7 +1,7 @@
 <template>
   <main class="overflow-hidden ">
     <!--Start Breadcrumb Style2-->
-    <div class="breadcrumb-area" style="background-image: url(src/assets/images/inner-pages/breadcum-bg.png);">
+    <div class="breadcrumb-area" style="background-image: url(src/assets/images/products-grid/Frame1.png);">
       <div class="container">
         <div class="row">
           <div class="col-xl-12">
@@ -124,11 +124,12 @@
                 <div class="single-sidebar-box mt-30 wow fadeInUp animated ">
                   <h4>Tags</h4>
                   <div class="checkbox-item">
-                    <form>
                       <div v-for="tag in filterList.tags" class="form-group">
                         <input v-model="tags" :value="tag.id" type="checkbox" :id="tag.id + 'tag'">
                         <label :for="tag.id + 'tag'">{{tag.title}}</label></div>
-                    </form>
+                  </div>
+                  <div class="slider-box">
+                    <button class="filterbtn" type="submit" @click.prevent="getProductsByFilter"> Filter </button>
                   </div>
                 </div>
               </div>
@@ -2180,20 +2181,25 @@ export default {
   },
 
   methods: {
-    addTag(id) {
-      if(!this.tags.includes(id)) {
-        this.tags.push(id);
-      } else {
-        this.tags = this.tags.filter(elem=>{
-          return elem !== id
-        })
-      }
-      console.log(this.tags);
-    },
     getProductsByFilter() {
-      console.log(this.tags);
-      console.log(this.categories);
-      console.log(this.breweries);
+      let prices = $('#priceRange').val();
+
+      prices = prices.slice(0, prices.length-4).split(' - ');
+
+      this.axios.post('http://shop/api/products/filter',{
+        'categories' : this.categories,
+        'tags' : this.tags,
+        'prices' : prices,
+        'breweries' : this.breweries,
+      }).then(
+          res => {
+            this.products = res.data.data;
+            console.log(this.products);
+          }
+      )
+          .finally(v => {
+            $(document).trigger('changed')
+          });
     },
     getProducts() {
       this.axios.get('http://shop/api/products').then(
@@ -2207,7 +2213,7 @@ export default {
           });
     },
     getFilterList(){
-      this.axios.get('http://shop/api/products/filters').then(
+      this.axios.get('http://shop/api/filters').then(
           res => {
             this.filterList = res.data;
             if ($("#price-range").length) {
@@ -2222,7 +2228,6 @@ export default {
               });
               $("#priceRange").val($("#price-range").slider("values", 0) + " - " + $("#price-range").slider("values", 1) + " руб");
             };
-            console.log(res.data);
           }
       )
           .finally(v => {
