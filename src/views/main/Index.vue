@@ -7,13 +7,13 @@
       <div class="row align-items-center justify-content-sm-between">
         <div class="col-lg-5 d-lg-block d-none">
           <div class="newsLetter-popup__thumb imgenews">
-            <img src="src/assets/images/home-three/products-1.jpg" alt="newsletter">
+            <img src="http://localhost:5173/src/assets/images/home-three/products-1.jpg" alt="newsletter">
           </div>
         </div>
         <div class="col-lg-7 col-md-8 col-sm-10">
           <div class="newsLetter-popup__content mb-4">
             <div class="text-center"> <a href="index.html" class="logo"> <img
-                src="src/assets/images/logo/logo.png" alt="logo"> </a>
+                src="http://localhost:5173/src/assets/images/logo/logo.png" alt="logo"> </a>
               <h2> Join <span>with us.</span> </h2>
               <p> Subscribe to receive news from Karte In a free hour </p>
             </div>
@@ -41,7 +41,7 @@
         <div class="slide">
           <div class="contant-box position-relative">
 
-            <img class="bg-img hundread-vh" src="src/assets/images/home-three/home-3-bg.jpg" alt="image">
+            <img class="bg-img hundread-vh" src="http://localhost:5173/src/assets/images/home-three/home-3-bg.jpg" alt="image">
 
             <div class="content-holder p-0 absolute-content">
               <div class="container  w-100 h-100">
@@ -71,7 +71,7 @@
           <div class="contant-box position-relative">
 
 
-            <img class="bg-img hundread-vh" src="src/assets/images/home-three/home-3-bg-2.jpg" alt="image">
+            <img class="bg-img hundread-vh" src="http://localhost:5173/src/assets/images/home-three/home-3-bg-2.jpg" alt="image">
 
 
             <div class="content-holder p-0 absolute-content">
@@ -108,7 +108,7 @@
         <div class="row mt--30">
           <div class="col-lg-6 h-100 mt-30">
             <a href="shop-grid.html" class="catagory-single one home3cat">
-              <img src="src/assets/images/home-three/cat-1.png" alt="#" class="background-img bg-img imgone">
+              <img src="http://localhost:5173/src/assets/images/home-three/cat-1.png" alt="#" class="background-img bg-img imgone">
               <div class="content">
                 <div class="row w-100 h-100 align-items-center">
                   <div class="col-xl-7 col-md-9">
@@ -126,7 +126,7 @@
             <div class="row">
               <div class="co-12 mt-30 ">
                 <a href="shop-grid.html" class="catagory-single home3cat">
-                  <img src="src/assets/images/home-three/catbg-3.png" alt=""
+                  <img src="http://localhost:5173/src/assets/images/home-three/catbg-3.png" alt=""
                        class="background-img bg-img">
                   <div class="content">
                     <div class="row w-100 h-100 align-items-center">
@@ -144,7 +144,7 @@
               </div>
               <div class="col-12 mt-30">
                 <a href="shop-grid.html" class="catagory-single home3cat">
-                  <img src="src/assets/images/home-three/catbg-2.png" alt=""
+                  <img src="http://localhost:5173/src/assets/images/home-three/catbg-2.png" alt=""
                        class="background-img bg-img">
                   <div class="content">
                     <div class="row w-100 h-100 align-items-center">
@@ -201,9 +201,9 @@
                   <div class="products-three-single w-100">
                     <div class="products-three-single-img">
                       <a href="shop-details-3.html" class="d-block">
-                        <img src="src/assets/images/home-three/products-1.jpg" class="first-img"
+                        <img src="http://localhost:5173/src/assets/images/home-three/products-1.jpg" class="first-img"
                              alt="" />
-                        <img src="src/assets/images/home-three/products-hover-1.png" alt=""
+                        <img src="http://localhost:5173/src/assets/images/home-three/products-hover-1.png" alt=""
                              class="hover-img" />
                       </a>
                       <div class="products-grid-one__badge-box"> <span
@@ -233,7 +233,7 @@
                   <div class="products-three-single w-100">
                     <div class="products-three-single-img">
                       <a href="shop-details-3.html" class="d-block">
-                        <img src="src/assets/images/home-three/products-2.jpg" alt="" />
+                        <img src="http://localhost:5173/src/assets/images/home-three/products-2.jpg" alt="" />
                       </a>
                       <a href="cart.html" class="addcart btn--primary style2">
                         Add To Cart </a>
@@ -260,9 +260,9 @@
                   <div class="products-three-single w-100">
                     <div class="products-three-single-img">
                       <a href="shop-details-3.html" class="d-block">
-                        <img src="src/assets/images/home-three/products-3.jpg" class="first-img"
+                        <img src="http://localhost:5173/src/assets/images/home-three/products-3.jpg" class="first-img"
                              alt="" />
-                        <img src="src/assets/images/home-three/products-hover-3.png" alt=""
+                        <img src="http://localhost:5173/src/assets/images/home-three/products-hover-3.png" alt=""
                              class="hover-img" />
                       </a>
                       <div class="products-grid-one__badge-box"> <span
@@ -292,7 +292,7 @@
                   <div class="products-three-single w-100">
                     <div class="products-three-single-img">
                       <a href="shop-details-3.html" class="d-block">
-                        <img src="src/assets/images/home-three/products-4.jpg" alt="" />
+                        <img src="http://localhost:5173/src/assets/images/home-three/products-4.jpg" alt="" />
                       </a>
                       <a href="cart.html" class="addcart btn--primary style2"> Add To Cart </a>
                       <div class="products-grid__usefull-links">
@@ -318,7 +318,7 @@
                   <div class="products-three-single w-100">
                     <div class="products-three-single-img img-bg">
                       <a href="shop-details-3.html" class="d-block">
-                        <img src="src/assets/images/home-three/products-5.png" alt="" />
+                        <img src="http://localhost:5173/src/assets/images/home-three/products-5.png" alt="" />
                       </a>
                       <div class="products-grid-one__badge-box"> <span
                           class="bg_black badge discount">-10%</span> </div> <a
@@ -346,7 +346,7 @@
                   <div class="products-three-single w-100">
                     <div class="products-three-single-img">
                       <a href="shop-details-3.html" class="d-block">
-                        <img src="src/assets/images/home-three/products-6.png" alt="" />
+                        <img src="http://localhost:5173/src/assets/images/home-three/products-6.png" alt="" />
                       </a>
                       <div class="products-grid-one__badge-box"> <span
                           class="bg_base badge new ">New</span> </div> <a href="cart.html"
@@ -379,9 +379,9 @@
                   <div class="products-three-single w-100">
                     <div class="products-three-single-img">
                       <a href="shop-details-3.html" class="d-block">
-                        <img src="src/assets/images/home-three/productss2-1.jpg" class="first-img"
+                        <img src="http://localhost:5173/src/assets/images/home-three/productss2-1.jpg" class="first-img"
                              alt="" />
-                        <img src="src/assets/images/home-three/productss2-hover-1.png" alt=""
+                        <img src="http://localhost:5173/src/assets/images/home-three/productss2-hover-1.png" alt=""
                              class="hover-img" />
                       </a>
                       <div class="products-grid-one__badge-box"> <span
@@ -411,7 +411,7 @@
                   <div class="products-three-single w-100">
                     <div class="products-three-single-img">
                       <a href="shop-details-3.html" class="d-block">
-                        <img src="src/assets/images/home-three/productss2-2.jpg" alt="" />
+                        <img src="http://localhost:5173/src/assets/images/home-three/productss2-2.jpg" alt="" />
                       </a>
                       <a href="cart.html" class="addcart btn--primary style2">
                         Add To Cart </a>
@@ -438,9 +438,9 @@
                   <div class="products-three-single w-100">
                     <div class="products-three-single-img">
                       <a href="shop-details-3.html" class="d-block">
-                        <img src="src/assets/images/home-three/productss2-3.jpg" class="first-img"
+                        <img src="http://localhost:5173/src/assets/images/home-three/productss2-3.jpg" class="first-img"
                              alt="" />
-                        <img src="src/assets/images/home-three/productss2-hover-3.png" alt=""
+                        <img src="http://localhost:5173/src/assets/images/home-three/productss2-hover-3.png" alt=""
                              class="hover-img" />
                       </a>
                       <div class="products-grid-one__badge-box"> <span
@@ -470,7 +470,7 @@
                   <div class="products-three-single w-100">
                     <div class="products-three-single-img">
                       <a href="shop-details-3.html" class="d-block">
-                        <img src="src/assets/images/home-three/productss2-4.jpg" alt="" />
+                        <img src="http://localhost:5173/src/assets/images/home-three/productss2-4.jpg" alt="" />
                       </a>
                       <a href="cart.html" class="addcart btn--primary style2"> Add To Cart </a>
                       <div class="products-grid__usefull-links">
@@ -496,7 +496,7 @@
                   <div class="products-three-single w-100">
                     <div class="products-three-single-img img-bg">
                       <a href="shop-details-3.html" class="d-block">
-                        <img src="src/assets/images/home-three/productss2-5.jpg" alt="" />
+                        <img src="http://localhost:5173/src/assets/images/home-three/productss2-5.jpg" alt="" />
                       </a>
                       <div class="products-grid-one__badge-box"> <span
                           class="bg_black badge discount">-10%</span> </div> <a
@@ -524,7 +524,7 @@
                   <div class="products-three-single w-100">
                     <div class="products-three-single-img">
                       <a href="shop-details-3.html" class="d-block">
-                        <img src="src/assets/images/home-three/productss2-2.jpg" alt="" />
+                        <img src="http://localhost:5173/src/assets/images/home-three/productss2-2.jpg" alt="" />
                       </a>
                       <div class="products-grid-one__badge-box"> <span
                           class="bg_base badge new ">New</span> </div> <a href="cart.html"
@@ -557,9 +557,9 @@
                   <div class="products-three-single w-100">
                     <div class="products-three-single-img">
                       <a href="shop-details-3.html" class="d-block">
-                        <img src="src/assets/images/home-three/productss3-1.jpg" class="first-img"
+                        <img src="http://localhost:5173/src/assets/images/home-three/productss3-1.jpg" class="first-img"
                              alt="" />
-                        <img src="src/assets/images/home-three/productss3-hover-1.jpg" alt=""
+                        <img src="http://localhost:5173/src/assets/images/home-three/productss3-hover-1.jpg" alt=""
                              class="hover-img" />
                       </a>
                       <div class="products-grid-one__badge-box"> <span
@@ -589,7 +589,7 @@
                   <div class="products-three-single w-100">
                     <div class="products-three-single-img">
                       <a href="shop-details-3.html" class="d-block">
-                        <img src="src/assets/images/home-three/productss3-2.jpg" alt="" />
+                        <img src="http://localhost:5173/src/assets/images/home-three/productss3-2.jpg" alt="" />
                       </a>
                       <a href="cart.html" class="addcart btn--primary style2">
                         Add To Cart </a>
@@ -616,9 +616,9 @@
                   <div class="products-three-single w-100">
                     <div class="products-three-single-img">
                       <a href="shop-details-3.html" class="d-block">
-                        <img src="src/assets/images/home-three/productss3-3.jpg" class="first-img"
+                        <img src="http://localhost:5173/src/assets/images/home-three/productss3-3.jpg" class="first-img"
                              alt="" />
-                        <img src="src/assets/images/home-three/productss3-hover-3.png" alt=""
+                        <img src="http://localhost:5173/src/assets/images/home-three/productss3-hover-3.png" alt=""
                              class="hover-img" />
                       </a>
                       <div class="products-grid-one__badge-box"> <span
@@ -648,7 +648,7 @@
                   <div class="products-three-single w-100">
                     <div class="products-three-single-img">
                       <a href="shop-details-3.html" class="d-block">
-                        <img src="src/assets/images/home-three/productss3-4.jpg" alt="" />
+                        <img src="http://localhost:5173/src/assets/images/home-three/productss3-4.jpg" alt="" />
                       </a>
                       <a href="cart.html" class="addcart btn--primary style2"> Add To Cart </a>
                       <div class="products-grid__usefull-links">
@@ -674,7 +674,7 @@
                   <div class="products-three-single w-100">
                     <div class="products-three-single-img img-bg">
                       <a href="shop-details-3.html" class="d-block">
-                        <img src="src/assets/images/home-three/productss3-5.png" alt="" />
+                        <img src="http://localhost:5173/src/assets/images/home-three/productss3-5.png" alt="" />
                       </a>
                       <div class="products-grid-one__badge-box"> <span
                           class="bg_black badge discount">-10%</span> </div> <a
@@ -702,7 +702,7 @@
                   <div class="products-three-single w-100">
                     <div class="products-three-single-img">
                       <a href="shop-details-3.html" class="d-block">
-                        <img src="src/assets/images/home-three/productss3-3.jpg" alt="" />
+                        <img src="http://localhost:5173/src/assets/images/home-three/productss3-3.jpg" alt="" />
                       </a>
                       <div class="products-grid-one__badge-box"> <span
                           class="bg_base badge new ">New</span> </div> <a href="cart.html"
@@ -748,7 +748,7 @@
           <div class="col-xl-6 wow fadeInLeft animated ">
             <div class="video-main-box position-relative">
               <div class="video-two__img"
-                   style="background-image: url(src/assets/images/home-three/video-v2-img1.jpg);">
+                   style="background-image: url(http://localhost:5173/src/assets/images/home-three/video-v2-img1.jpg);">
                 <div class="icon wow zoomIn animated animated" data-wow-delay="300ms"
                      data-wow-duration="1500ms"
                      style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: zoomIn;">
@@ -797,8 +797,8 @@
                 <li class="products-three-single wow fadeInUp animated">
                   <div class="products-three-single-img">
                     <a href="shop-details-3.html" class="d-block"> <img
-                        src="src/assets/images/home-three/productss2-1.jpg" class="first-img"
-                        alt="" /> <img src="src/assets/images/home-three/productss2-hover-1.png"
+                        src="http://localhost:5173/src/assets/images/home-three/productss2-1.jpg" class="first-img"
+                        alt="" /> <img src="http://localhost:5173/src/assets/images/home-three/productss2-hover-1.png"
                                        alt="" class="hover-img" /> </a>
                     <div class="products-grid-one__badge-box"> <span
                         class="bg_base badge new ">New</span> </div> <a href="cart.html"
@@ -826,32 +826,32 @@
                                 <ul>
                                   <li class="tab-nav popup-product-thumb"> <a
                                       href="#tabb1"> <img
-                                      src="src/assets/images/shop/products-v6-img5.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img5.jpg"
                                       alt="" /> </a> </li>
                                   <li class="tab-nav popup-product-thumb "> <a
                                       href="#tabb2"> <img
-                                      src="src/assets/images/shop/products-v6-img6.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img6.jpg"
                                       alt="" /> </a> </li>
                                   <li class="tab-nav popup-product-thumb "> <a
                                       href="#tabb3"> <img
-                                      src="src/assets/images/shop/products-v6-img7.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img7.jpg"
                                       alt="" /> </a> </li>
                                 </ul>
                               </div>
                               <div class="popup-product-main-image-box">
                                 <div id="tabb1" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img5.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img5.jpg"
                                       alt="" /> </div>
                                 </div>
                                 <div id="tabb2" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img6.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img6.jpg"
                                       alt="" /> </div>
                                 </div>
                                 <div id="tabb3" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img7.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img7.jpg"
                                       alt="" /> </div>
                                 </div> <button class="prev"> <i
                                   class="flaticon-back"></i> </button> <button
@@ -894,13 +894,13 @@
                               </div>
                             </div>
                             <div class="payment-method"> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_1.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_2.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_3.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_4.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                 alt=""> </a> </div>
                           </div>
                         </div>
@@ -917,9 +917,9 @@
                 <li class="products-three-single wow fadeInUp animated">
                   <div class="products-three-single-img">
                     <a href="shop-details-3.html" class="d-block">
-                      <img src="src/assets/images/home-three/productss2-hover-2.png" class="first-img"
+                      <img src="http://localhost:5173/src/assets/images/home-three/productss2-hover-2.png" class="first-img"
                            alt="" />
-                      <img src="src/assets/images/home-three/productss2-2.jpg" alt=""
+                      <img src="http://localhost:5173/src/assets/images/home-three/productss2-2.jpg" alt=""
                            class="hover-img" />
                     </a>
                     <div class="products-grid-one__badge-box"> <span
@@ -948,32 +948,32 @@
                                 <ul>
                                   <li class="tab-nav popup-product-thumb"> <a
                                       href="#tabb11"> <img
-                                      src="src/assets/images/shop/products-v6-img6.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img6.jpg"
                                       alt="" /> </a> </li>
                                   <li class="tab-nav popup-product-thumb "> <a
                                       href="#tabb22"> <img
-                                      src="src/assets/images/shop/products-v6-img7.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img7.jpg"
                                       alt="" /> </a> </li>
                                   <li class="tab-nav popup-product-thumb "> <a
                                       href="#tabb33"> <img
-                                      src="src/assets/images/shop/products-v6-img8.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img8.jpg"
                                       alt="" /> </a> </li>
                                 </ul>
                               </div>
                               <div class="popup-product-main-image-box">
                                 <div id="tabb11" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img6.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img6.jpg"
                                       alt="" /> </div>
                                 </div>
                                 <div id="tabb22" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img7.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img7.jpg"
                                       alt="" /> </div>
                                 </div>
                                 <div id="tabb33" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img8.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img8.jpg"
                                       alt="" /> </div>
                                 </div> <button class="prev"> <i
                                   class="flaticon-back"></i> </button> <button
@@ -1016,13 +1016,13 @@
                               </div>
                             </div>
                             <div class="payment-method"> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_1.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_2.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_3.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_4.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                 alt=""> </a> </div>
                           </div>
                         </div>
@@ -1039,7 +1039,7 @@
                 <li class="products-three-single wow fadeInUp animated">
                   <div class="products-three-single-img">
                     <a href="shop-details-3.html" class="d-block">
-                      <img src="src/assets/images/home-three/productss2-3.jpg" alt="" />
+                      <img src="http://localhost:5173/src/assets/images/home-three/productss2-3.jpg" alt="" />
                     </a>
 
                     <a href="cart.html" class="addcart btn--primary style2">
@@ -1067,15 +1067,15 @@
                                   <ul>
                                     <li class="tab-nav popup-product-thumb"> <a
                                         href="#tabb111"> <img
-                                        src="src/assets/images/shop/products-v6-img7.jpg"
+                                        src="http://localhost:5173/src/assets/images/shop/products-v6-img7.jpg"
                                         alt="" /> </a> </li>
                                     <li class="tab-nav popup-product-thumb "> <a
                                         href="#tabb222"> <img
-                                        src="src/assets/images/shop/products-v6-img8.jpg"
+                                        src="http://localhost:5173/src/assets/images/shop/products-v6-img8.jpg"
                                         alt="" /> </a> </li>
                                     <li class="tab-nav popup-product-thumb "> <a
                                         href="#tabb333"> <img
-                                        src="src/assets/images/shop/products-v6-img9.jpg"
+                                        src="http://localhost:5173/src/assets/images/shop/products-v6-img9.jpg"
                                         alt="" /> </a> </li>
                                   </ul>
                                 </div>
@@ -1083,19 +1083,19 @@
                                   <div id="tabb111"
                                        class="tab-item popup-product-image">
                                     <div class="popup-product-single-image"> <img
-                                        src="src/assets/images/shop/products-v6-img7.jpg"
+                                        src="http://localhost:5173/src/assets/images/shop/products-v6-img7.jpg"
                                         alt="" /> </div>
                                   </div>
                                   <div id="tabb222"
                                        class="tab-item popup-product-image">
                                     <div class="popup-product-single-image"> <img
-                                        src="src/assets/images/shop/products-v6-img8.jpg"
+                                        src="http://localhost:5173/src/assets/images/shop/products-v6-img8.jpg"
                                         alt="" /> </div>
                                   </div>
                                   <div id="tabb333"
                                        class="tab-item popup-product-image">
                                     <div class="popup-product-single-image"> <img
-                                        src="src/assets/images/shop/products-v6-img9.jpg"
+                                        src="http://localhost:5173/src/assets/images/shop/products-v6-img9.jpg"
                                         alt="" /> </div>
                                   </div> <button class="prev"> <i
                                     class="flaticon-back"></i> </button> <button
@@ -1141,13 +1141,13 @@
                                 </div>
                               </div>
                               <div class="payment-method"> <a href="#0"> <img
-                                  src="src/assets/images/payment_method/method_1.png"
+                                  src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                   alt=""> </a> <a href="#0"> <img
-                                  src="src/assets/images/payment_method/method_2.png"
+                                  src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                   alt=""> </a> <a href="#0"> <img
-                                  src="src/assets/images/payment_method/method_3.png"
+                                  src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                   alt=""> </a> <a href="#0"> <img
-                                  src="src/assets/images/payment_method/method_4.png"
+                                  src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                   alt=""> </a> </div>
                             </div>
                           </div>
@@ -1164,7 +1164,7 @@
                 <!--Start Products Six Single-->
                 <li class="products-three-single  wow fadeInUp animated">
                   <div class="products-three-single-img"> <a href="shop-details-3.html"
-                                                             class="d-block"> <img src="src/assets/images/home-three/productss2-4.jpg"
+                                                             class="d-block"> <img src="http://localhost:5173/src/assets/images/home-three/productss2-4.jpg"
                                                                                    alt="" />
                   </a>
                     <div class="products-grid-one__badge-box"> <span
@@ -1193,32 +1193,32 @@
                                 <ul>
                                   <li class="tab-nav popup-product-thumb"> <a
                                       href="#tabb1111"> <img
-                                      src="src/assets/images/shop/products-v6-img9.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img9.jpg"
                                       alt="" /> </a> </li>
                                   <li class="tab-nav popup-product-thumb "> <a
                                       href="#tabb2222"> <img
-                                      src="src/assets/images/shop/products-v6-img9.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img9.jpg"
                                       alt="" /> </a> </li>
                                   <li class="tab-nav popup-product-thumb "> <a
                                       href="#tabb3333"> <img
-                                      src="src/assets/images/shop/products-v6-img10.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img10.jpg"
                                       alt="" /> </a> </li>
                                 </ul>
                               </div>
                               <div class="popup-product-main-image-box">
                                 <div id="tabb1111" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img8.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img8.jpg"
                                       alt="" /> </div>
                                 </div>
                                 <div id="tabb2222" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img9.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img9.jpg"
                                       alt="" /> </div>
                                 </div>
                                 <div id="tabb3333" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img10.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img10.jpg"
                                       alt="" /> </div>
                                 </div> <button class="prev"> <i
                                   class="flaticon-back"></i> </button> <button
@@ -1261,13 +1261,13 @@
                               </div>
                             </div>
                             <div class="payment-method"> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_1.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_2.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_3.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_4.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                 alt=""> </a> </div>
                           </div>
                         </div>
@@ -1284,9 +1284,9 @@
                 <li class="products-three-single   wow fadeInUp animated">
                   <div class="products-three-single-img">
                     <a href="shop-details-3.html" class="d-block">
-                      <img src="src/assets/images/home-three/productss2-5.jpg" class="first-img"
+                      <img src="http://localhost:5173/src/assets/images/home-three/productss2-5.jpg" class="first-img"
                            alt="" />
-                      <img src="src/assets/images/home-three/productss2-hover-5.png" alt=""
+                      <img src="http://localhost:5173/src/assets/images/home-three/productss2-hover-5.png" alt=""
                            class="hover-img" />
                     </a>
                     <a href="cart.html" class="addcart btn--primary style2"> Add To Cart </a>
@@ -1313,32 +1313,32 @@
                                 <ul>
                                   <li class="tab-nav popup-product-thumb"> <a
                                       href="#tabc1"> <img
-                                      src="src/assets/images/shop/products-v6-img9.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img9.jpg"
                                       alt="" /> </a> </li>
                                   <li class="tab-nav popup-product-thumb "> <a
                                       href="#tabc2"> <img
-                                      src="src/assets/images/shop/products-v6-img9.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img9.jpg"
                                       alt="" /> </a> </li>
                                   <li class="tab-nav popup-product-thumb "> <a
                                       href="#tabc3"> <img
-                                      src="src/assets/images/shop/products-v6-img10.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img10.jpg"
                                       alt="" /> </a> </li>
                                 </ul>
                               </div>
                               <div class="popup-product-main-image-box">
                                 <div id="tabc1" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img8.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img8.jpg"
                                       alt="" /> </div>
                                 </div>
                                 <div id="tabc2" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img9.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img9.jpg"
                                       alt="" /> </div>
                                 </div>
                                 <div id="tabc3" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img10.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img10.jpg"
                                       alt="" /> </div>
                                 </div> <button class="prev"> <i
                                   class="flaticon-back"></i> </button> <button
@@ -1381,13 +1381,13 @@
                               </div>
                             </div>
                             <div class="payment-method"> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_1.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_2.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_3.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_4.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                 alt=""> </a> </div>
                           </div>
                         </div>
@@ -1405,9 +1405,9 @@
                 <li class="products-three-single wow fadeInUp animated">
                   <div class="products-three-single-img">
                     <a href="shop-details-3.html" class="d-block">
-                      <img src="src/assets/images/home-three/productss3-1.jpg" class="first-img"
+                      <img src="http://localhost:5173/src/assets/images/home-three/productss3-1.jpg" class="first-img"
                            alt="" />
-                      <img src="src/assets/images/home-three/productss3-hover-1.jpg" alt=""
+                      <img src="http://localhost:5173/src/assets/images/home-three/productss3-hover-1.jpg" alt=""
                            class="hover-img" />
                     </a>
                     <div class="products-grid-one__badge-box"> <span
@@ -1437,32 +1437,32 @@
                                 <ul>
                                   <li class="tab-nav popup-product-thumb"> <a
                                       href="#tab1"> <img
-                                      src="src/assets/images/shop/products-v6-img1.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img1.jpg"
                                       alt="" /> </a> </li>
                                   <li class="tab-nav popup-product-thumb "> <a
                                       href="#tab2"> <img
-                                      src="src/assets/images/shop/products-v6-img2.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img2.jpg"
                                       alt="" /> </a> </li>
                                   <li class="tab-nav popup-product-thumb "> <a
                                       href="#tab3"> <img
-                                      src="src/assets/images/shop/products-v6-img3.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img3.jpg"
                                       alt="" /> </a> </li>
                                 </ul>
                               </div>
                               <div class="popup-product-main-image-box">
                                 <div id="tab1" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img1.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img1.jpg"
                                       alt="" /> </div>
                                 </div>
                                 <div id="tab2" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img2.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img2.jpg"
                                       alt="" /> </div>
                                 </div>
                                 <div id="tab3" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img3.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img3.jpg"
                                       alt="" /> </div>
                                 </div> <button class="prev"> <i
                                   class="flaticon-back"></i> </button> <button
@@ -1505,13 +1505,13 @@
                               </div>
                             </div>
                             <div class="payment-method"> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_1.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_2.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_3.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_4.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                 alt=""> </a> </div>
                           </div>
                         </div>
@@ -1527,7 +1527,7 @@
                 <!--Start Products Six Single-->
                 <li class="products-three-single wow fadeInUp animated">
                   <div class="products-three-single-img"> <a href="shop-details-3.html"
-                                                             class="d-block"> <img src="src/assets/images/home-three/productss3-2.jpg"
+                                                             class="d-block"> <img src="http://localhost:5173/src/assets/images/home-three/productss3-2.jpg"
                                                                                    alt="" />
                   </a> <a href="cart.html" class="addcart btn--primary style2">
                     Add To Cart </a>
@@ -1553,32 +1553,32 @@
                                 <ul>
                                   <li class="tab-nav popup-product-thumb"> <a
                                       href="#tab11"> <img
-                                      src="src/assets/images/shop/products-v6-img1.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img1.jpg"
                                       alt="" /> </a> </li>
                                   <li class="tab-nav popup-product-thumb "> <a
                                       href="#tab22"> <img
-                                      src="src/assets/images/shop/products-v6-img2.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img2.jpg"
                                       alt="" /> </a> </li>
                                   <li class="tab-nav popup-product-thumb "> <a
                                       href="#tab33"> <img
-                                      src="src/assets/images/shop/products-v6-img3.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img3.jpg"
                                       alt="" /> </a> </li>
                                 </ul>
                               </div>
                               <div class="popup-product-main-image-box">
                                 <div id="tab11" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img1.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img1.jpg"
                                       alt="" /> </div>
                                 </div>
                                 <div id="tab22" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img2.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img2.jpg"
                                       alt="" /> </div>
                                 </div>
                                 <div id="tab33" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img3.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img3.jpg"
                                       alt="" /> </div>
                                 </div> <button class="prev"> <i
                                   class="flaticon-back"></i> </button> <button
@@ -1621,13 +1621,13 @@
                               </div>
                             </div>
                             <div class="payment-method"> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_1.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_2.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_3.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_4.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                 alt=""> </a> </div>
                           </div>
                         </div>
@@ -1644,7 +1644,7 @@
                 <li class="products-three-single wow fadeInUp animated">
                   <div class="products-three-single-img">
                     <a href="shop-details-3.html" class="d-block">
-                      <img src="src/assets/images/home-three/productss3-3.jpg" alt="" /> </a>
+                      <img src="http://localhost:5173/src/assets/images/home-three/productss3-3.jpg" alt="" /> </a>
                     <div class="products-grid-one__badge-box"> <span
                         class="bg_base badge new ">New</span> </div> <a href="cart.html"
                                                                         class="addcart btn--primary style2"> Add To Cart </a>
@@ -1670,32 +1670,32 @@
                                 <ul>
                                   <li class="tab-nav popup-product-thumb"> <a
                                       href="#tab111"> <img
-                                      src="src/assets/images/shop/products-v6-img3.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img3.jpg"
                                       alt="" /> </a> </li>
                                   <li class="tab-nav popup-product-thumb "> <a
                                       href="#tab222"> <img
-                                      src="src/assets/images/shop/products-v6-img4.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img4.jpg"
                                       alt="" /> </a> </li>
                                   <li class="tab-nav popup-product-thumb "> <a
                                       href="#tab333"> <img
-                                      src="src/assets/images/shop/products-v6-img5.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img5.jpg"
                                       alt="" /> </a> </li>
                                 </ul>
                               </div>
                               <div class="popup-product-main-image-box">
                                 <div id="tab111" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img3.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img3.jpg"
                                       alt="" /> </div>
                                 </div>
                                 <div id="tab222" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img4.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img4.jpg"
                                       alt="" /> </div>
                                 </div>
                                 <div id="tab333" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img5.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img5.jpg"
                                       alt="" /> </div>
                                 </div> <button class="prev"> <i
                                   class="flaticon-back"></i> </button> <button
@@ -1738,13 +1738,13 @@
                               </div>
                             </div>
                             <div class="payment-method"> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_1.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_2.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_3.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_4.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                 alt=""> </a> </div>
                           </div>
                         </div>
@@ -1760,7 +1760,7 @@
                 <!--Start Products Six Single-->
                 <li class="products-three-single wow fadeInUp animated">
                   <div class="products-three-single-img"> <a href="shop-details-3.html"
-                                                             class="d-block"> <img src="src/assets/images/home-three/productss3-4.jpg"
+                                                             class="d-block"> <img src="http://localhost:5173/src/assets/images/home-three/productss3-4.jpg"
                                                                                    alt="" />
                   </a> <a href="cart.html" class="addcart btn--primary style2">
                     Add To Cart </a>
@@ -1787,32 +1787,32 @@
                                 <ul>
                                   <li class="tab-nav popup-product-thumb"> <a
                                       href="#tab1111"> <img
-                                      src="src/assets/images/shop/products-v6-img4.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img4.jpg"
                                       alt="" /> </a> </li>
                                   <li class="tab-nav popup-product-thumb "> <a
                                       href="#tab2222"> <img
-                                      src="src/assets/images/shop/products-v6-img5.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img5.jpg"
                                       alt="" /> </a> </li>
                                   <li class="tab-nav popup-product-thumb "> <a
                                       href="#tab3333"> <img
-                                      src="src/assets/images/shop/products-v6-img6.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img6.jpg"
                                       alt="" /> </a> </li>
                                 </ul>
                               </div>
                               <div class="popup-product-main-image-box">
                                 <div id="tab1111" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img4.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img4.jpg"
                                       alt="" /> </div>
                                 </div>
                                 <div id="tab2222" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img5.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img5.jpg"
                                       alt="" /> </div>
                                 </div>
                                 <div id="tab3333" class="tab-item popup-product-image">
                                   <div class="popup-product-single-image"> <img
-                                      src="src/assets/images/shop/products-v6-img6.jpg"
+                                      src="http://localhost:5173/src/assets/images/shop/products-v6-img6.jpg"
                                       alt="" /> </div>
                                 </div> <button class="prev"> <i
                                   class="flaticon-back"></i> </button> <button
@@ -1855,13 +1855,13 @@
                               </div>
                             </div>
                             <div class="payment-method"> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_1.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_2.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_3.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                 alt=""> </a> <a href="#0"> <img
-                                src="src/assets/images/payment_method/method_4.png"
+                                src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                 alt=""> </a> </div>
                           </div>
                         </div>
@@ -1878,7 +1878,7 @@
                 <li class="products-three-single wow fadeInUp animated">
                   <div class="products-three-single-img img-bg">
                     <a href="shop-details-3.html" class="d-block">
-                      <img src="src/assets/images/home-three/productss2-1.jpg" alt="" />
+                      <img src="http://localhost:5173/src/assets/images/home-three/productss2-1.jpg" alt="" />
                       <div class="products-grid-one__badge-box"> <span
                           class="bg_black badge discount">-10%</span> </div> <a
                         href="cart.html" class="addcart btn--primary style2"> Add To Cart </a>
@@ -1905,15 +1905,15 @@
                                     <ul>
                                       <li class="tab-nav popup-product-thumb"> <a
                                           href="#tab11111"> <img
-                                          src="src/assets/images/shop/products-v6-img5.jpg"
+                                          src="http://localhost:5173/src/assets/images/shop/products-v6-img5.jpg"
                                           alt="" /> </a> </li>
                                       <li class="tab-nav popup-product-thumb "> <a
                                           href="#tab22222"> <img
-                                          src="src/assets/images/shop/products-v6-img6.jpg"
+                                          src="http://localhost:5173/src/assets/images/shop/products-v6-img6.jpg"
                                           alt="" /> </a> </li>
                                       <li class="tab-nav popup-product-thumb "> <a
                                           href="#tab33333"> <img
-                                          src="src/assets/images/shop/products-v6-img7.jpg"
+                                          src="http://localhost:5173/src/assets/images/shop/products-v6-img7.jpg"
                                           alt="" /> </a> </li>
                                     </ul>
                                   </div>
@@ -1921,19 +1921,19 @@
                                     <div id="tab11111"
                                          class="tab-item popup-product-image">
                                       <div class="popup-product-single-image">
-                                        <img src="src/assets/images/shop/products-v6-img5.jpg"
+                                        <img src="http://localhost:5173/src/assets/images/shop/products-v6-img5.jpg"
                                              alt="" /> </div>
                                     </div>
                                     <div id="tab22222"
                                          class="tab-item popup-product-image">
                                       <div class="popup-product-single-image">
-                                        <img src="src/assets/images/shop/products-v6-img6.jpg"
+                                        <img src="http://localhost:5173/src/assets/images/shop/products-v6-img6.jpg"
                                              alt="" /> </div>
                                     </div>
                                     <div id="tab33333"
                                          class="tab-item popup-product-image">
                                       <div class="popup-product-single-image">
-                                        <img src="src/assets/images/shop/products-v6-img7.jpg"
+                                        <img src="http://localhost:5173/src/assets/images/shop/products-v6-img7.jpg"
                                              alt="" /> </div>
                                     </div> <button class="prev"> <i
                                       class="flaticon-back"></i> </button>
@@ -1986,13 +1986,13 @@
                                   </div>
                                 </div>
                                 <div class="payment-method"> <a href="#0"> <img
-                                    src="src/assets/images/payment_method/method_1.png"
+                                    src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                     alt=""> </a> <a href="#0"> <img
-                                    src="src/assets/images/payment_method/method_2.png"
+                                    src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                     alt=""> </a> <a href="#0"> <img
-                                    src="src/assets/images/payment_method/method_3.png"
+                                    src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                     alt=""> </a> <a href="#0"> <img
-                                    src="src/assets/images/payment_method/method_4.png"
+                                    src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                     alt=""> </a> </div>
                               </div>
                             </div>
@@ -2030,7 +2030,7 @@
                 <div
                     class="inner text-center d-flex flex-column justify-content-center align-items-center">
                   <div class="img-box">
-                    <img src="src/assets/images/home-three/fimg.png" alt="" />
+                    <img src="http://localhost:5173/src/assets/images/home-three/fimg.png" alt="" />
                   </div>
                   <div class="content-box mt-4"> <span>On Sale</span>
                     <h2>$1499.00</h2>
@@ -2044,7 +2044,7 @@
                 <div
                     class="inner text-center d-flex flex-column justify-content-center align-items-center">
                   <div class="img-box">
-                    <img src="src/assets/images/home-three/fimg.png" alt="" />
+                    <img src="http://localhost:5173/src/assets/images/home-three/fimg.png" alt="" />
                   </div>
                   <div class="content-box mt-4"> <span>On Sale</span>
                     <h2>$1499.00</h2>
@@ -2058,7 +2058,7 @@
                 <div
                     class="inner text-center d-flex flex-column justify-content-center align-items-center">
                   <div class="img-box">
-                    <img src="src/assets/images/home-three/fimg.png" alt="" />
+                    <img src="http://localhost:5173/src/assets/images/home-three/fimg.png" alt="" />
                   </div>
                   <div class="content-box mt-4"> <span>On Sale</span>
                     <h2>$1499.00</h2>
@@ -2084,7 +2084,7 @@
             <div class="col-md-6 wow fadeInUp animated">
               <div class="products-cetagory-three__single">
                 <div class="products-cetagory-three__single-img height-400"
-                     style="background-image: url(src/assets/images/shop/products-v7-img1.jpg);"> </div>
+                     style="background-image: url(http://localhost:5173/src/assets/images/shop/products-v7-img1.jpg);"> </div>
                 <div class="products-cetagory-three__single-content "> <span>Puma Hot Deal</span>
                   <h2>2022 Shoes</h2>
                   <div class="text">
@@ -2111,7 +2111,7 @@
             <div class="col-xxl-3 col-md-6 wow fadeInUp animated">
               <div class="products-cetagory-three__single style3">
                 <div class="products-cetagory-three__single-img  height-400  "
-                     style="background-image: url(src/assets/images/shop/products-v7-img2.jpg);"> </div>
+                     style="background-image: url(http://localhost:5173/src/assets/images/shop/products-v7-img2.jpg);"> </div>
                 <div class="products-cetagory-three__single-content "> <span>Puma Hot Deal</span>
                   <h2>2022 Shoes</h2>
                   <div class="text">
@@ -2136,7 +2136,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="newsLetter-one__content-box d-flex align-items-center justify-content-md-start justify-content-center wow fadeInUp animated"
                  data-wow-delay="0.1s">
-              <div class="thumb"> <img src="src/assets/images/home-two/envalop.png" alt=""> </div>
+              <div class="thumb"> <img src="http://localhost:5173/src/assets/images/home-two/envalop.png" alt=""> </div>
               <h3 class="t36"> <span>Sign Up For </span> Newsletter </h3>
             </div>
           </div>
@@ -2186,7 +2186,7 @@
                     <div class="categories-three__list-item mt-30 wow fadeInUp animated">
                       <div class="categories-three__list-item-inner"> <a
                           href="shop-grid-right-sidebar.html" class="img-box"> <img
-                          src="src/assets/images/home-three/categories-v2-img1.jpg" alt="" />
+                          src="http://localhost:5173/src/assets/images/home-three/categories-v2-img1.jpg" alt="" />
                         <div class="text"> <span>369 Items</span> </div>
                       </a>
                         <div class="title text-center">
@@ -2199,7 +2199,7 @@
                     <div class="categories-three__list-item mt-30 wow fadeInUp animated">
                       <div class="categories-three__list-item-inner"> <a
                           href="shop-grid-left-sidebar.html" class="img-box"> <img
-                          src="src/assets/images/home-three/categories-v2-img2.jpg" alt="" />
+                          src="http://localhost:5173/src/assets/images/home-three/categories-v2-img2.jpg" alt="" />
                         <div class="text"> <span>369 Items</span> </div>
                       </a>
                         <div class="title text-center">
@@ -2212,7 +2212,7 @@
                     <div class="categories-three__list-item mt-30 wow fadeInUp animated">
                       <div class="categories-three__list-item-inner"> <a
                           href="shop-grid-left-sidebar.html" class="img-box"> <img
-                          src="src/assets/images/home-three/categories-v2-img3.jpg" alt="" />
+                          src="http://localhost:5173/src/assets/images/home-three/categories-v2-img3.jpg" alt="" />
                         <div class="text"> <span>369 Items</span> </div>
                       </a>
                         <div class="title text-center">
@@ -2236,7 +2236,7 @@
         <div class="row mt--30">
           <div class="col-xxl-3 col-md-6 mt-30 wow fadeInUp animated " data-wow-delay="0.2s">
             <div class="core-features__box d-flex ms-0"> <span class="one"></span> <span class="two"></span>
-              <div class="icon"> <img src="src/assets/images/icon/f-icon-1.png" alt=""> </div>
+              <div class="icon"> <img src="http://localhost:5173/src/assets/images/icon/f-icon-1.png" alt=""> </div>
               <div class="core-features__box-content"> <a href="login.html" class="d-block">
                 <h4> Secure Payment </h4>
               </a>
@@ -2246,7 +2246,7 @@
           </div>
           <div class="col-xxl-3 col-md-6 mt-30 wow fadeInUp animated " data-wow-delay="0.3s">
             <div class="core-features__box d-flex "> <span class="one"></span> <span class="two"></span>
-              <div class="icon"> <img src="src/assets/images/icon/f-icon-2.png" alt=""> </div>
+              <div class="icon"> <img src="http://localhost:5173/src/assets/images/icon/f-icon-2.png" alt=""> </div>
               <div class="core-features__box-content"> <a href="login.html" class="d-block">
                 <h4> 27/7 Fast Delivery </h4>
               </a>
@@ -2256,7 +2256,7 @@
           </div>
           <div class="col-xxl-3 col-md-6 mt-30 wow fadeInUp animated " data-wow-delay="0.4s">
             <div class="core-features__box d-flex "> <span class="one"></span> <span class="two"></span>
-              <div class="icon"> <img src="src/assets/images/icon/f-icon-3.png" alt=""> </div>
+              <div class="icon"> <img src="http://localhost:5173/src/assets/images/icon/f-icon-3.png" alt=""> </div>
               <div class="core-features__box-content"> <a href="login.html" class="d-block">
                 <h4> Return & Refund </h4>
               </a>
@@ -2266,7 +2266,7 @@
           </div>
           <div class="col-xxl-3 col-md-6 mt-30 wow fadeInUp animated " data-wow-delay="0.5s">
             <div class="core-features__box d-flex me-0"> <span class="one"></span> <span class="two"></span>
-              <div class="icon"> <img src="src/assets/images/icon/f-icon-4.png" alt=""> </div>
+              <div class="icon"> <img src="http://localhost:5173/src/assets/images/icon/f-icon-4.png" alt=""> </div>
               <div class="core-features__box-content"> <a href="login.html" class="d-block">
                 <h4> Quality Support </h4>
               </a>
@@ -2296,7 +2296,7 @@
               <div class="review-one__single-review">
                 <div class="review-one__single-content">
                   <div class="review-one__aurthor">
-                    <div class="thumb"> <img src="src/assets/images/testimonial/testimonial-v1-1.png"
+                    <div class="thumb"> <img src="http://localhost:5173/src/assets/images/testimonial/testimonial-v1-1.png"
                                              alt=""> </div> <span class="quate"> <i
                       class="flaticon-right-quotes-symbol"></i> </span>
                   </div>
@@ -2310,7 +2310,7 @@
               <div class="review-one__single-review">
                 <div class="review-one__single-content">
                   <div class="review-one__aurthor">
-                    <div class="thumb"> <img src="src/assets/images/testimonial/testimonial-v1-2.png"
+                    <div class="thumb"> <img src="http://localhost:5173/src/assets/images/testimonial/testimonial-v1-2.png"
                                              alt=""> </div> <span class="quate"> <i
                       class="flaticon-right-quotes-symbol"></i> </span>
                   </div>
@@ -2324,7 +2324,7 @@
               <div class="review-one__single-review">
                 <div class="review-one__single-content">
                   <div class="review-one__aurthor">
-                    <div class="thumb"> <img src="src/assets/images/testimonial/testimonial-v1-3.png"
+                    <div class="thumb"> <img src="http://localhost:5173/src/assets/images/testimonial/testimonial-v1-3.png"
                                              alt=""> </div> <span class="quate"> <i
                       class="flaticon-right-quotes-symbol"></i> </span>
                   </div>
@@ -2338,7 +2338,7 @@
               <div class="review-one__single-review">
                 <div class="review-one__single-content">
                   <div class="review-one__aurthor">
-                    <div class="thumb"> <img src="src/assets/images/testimonial/testimonial-v1-2.png"
+                    <div class="thumb"> <img src="http://localhost:5173/src/assets/images/testimonial/testimonial-v1-2.png"
                                              alt=""> </div> <span class="quate"> <i
                       class="flaticon-right-quotes-symbol"></i> </span>
                   </div>
@@ -2369,7 +2369,7 @@
           <div class="col-xl-4 col-lg-4 col-sm-6 wow fadeInUp animated ">
             <div class="blog-three__single mt-30 ">
               <a href="blog-single.html" class="blog-three__single-img d-block">
-                <img src="src/assets/images/blog/blog-v3-1.jpg" alt="" />
+                <img src="http://localhost:5173/src/assets/images/blog/blog-v3-1.jpg" alt="" />
               </a>
               <div class="blog-three__single-content text-center"> <span>Vendora Style</span>
                 <h4><a href="blog-single.html">A Perfect Style With Our Fashion Shoes</a></h4>
@@ -2381,7 +2381,7 @@
           <!--Start Blog Three Single-->
           <div class="col-xl-4 col-lg-4 col-sm-6 wow fadeInUp animated">
             <div class="blog-three__single mt-30"> <a href="blog-single.html"
-                                                      class="blog-three__single-img d-block"> <img src="src/assets/images/blog/blog-v3-2.jpg"
+                                                      class="blog-three__single-img d-block"> <img src="http://localhost:5173/src/assets/images/blog/blog-v3-2.jpg"
                                                                                                    alt="" /> </a>
               <div class="blog-three__single-content text-center"> <span>Vendora Style</span>
                 <h4><a href="blog-single.html">2021-2021 fall-winter men's shoe trends.</a></h4>
@@ -2393,7 +2393,7 @@
           <!--Start Blog Three Single-->
           <div class="col-xl-4 col-lg-4 col-sm-6 wow fadeInUp animated">
             <div class="blog-three__single mt-30"> <a href="blog-single.html"
-                                                      class="blog-three__single-img d-block"> <img src="src/assets/images/blog/blog-v3-3.jpg"
+                                                      class="blog-three__single-img d-block"> <img src="http://localhost:5173/src/assets/images/blog/blog-v3-3.jpg"
                                                                                                    alt="" /> </a>
               <div class="blog-three__single-content text-center"> <span>Vendora Style</span>
                 <h4><a href="blog-single.html">What men's shoes will be in fashion in the spring </a>
@@ -2413,32 +2413,32 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-xl-12">
-            <div class="gallery-two__slider "> <a href="src/assets/images/home-three/gallery-v2-img1.jpg"
-                                                  class="gallery-two__single"> <img src="src/assets/images/home-three/gallery-v2-img1.jpg"
+            <div class="gallery-two__slider "> <a href="http://localhost:5173/src/assets/images/home-three/gallery-v2-img1.jpg"
+                                                  class="gallery-two__single"> <img src="http://localhost:5173/src/assets/images/home-three/gallery-v2-img1.jpg"
                                                                                     alt="" /> <span class="zoom-icon"> <i class="flaticon-expand"></i> </span> </a> <a
-                href="src/assets/images/home-three/gallery-v2-img2.jpg" class="gallery-two__single"> <img
-                src="src/assets/images/home-three/gallery-v2-img2.jpg" alt="" /> <span
+                href="http://localhost:5173/src/assets/images/home-three/gallery-v2-img2.jpg" class="gallery-two__single"> <img
+                src="http://localhost:5173/src/assets/images/home-three/gallery-v2-img2.jpg" alt="" /> <span
                 class="zoom-icon"> <i class="flaticon-expand"></i> </span> </a> <a
-                href="src/assets/images/home-three/gallery-v2-img3.jpg" class="gallery-two__single"> <img
-                src="src/assets/images/home-three/gallery-v2-img3.jpg" alt="" /> <span
+                href="http://localhost:5173/src/assets/images/home-three/gallery-v2-img3.jpg" class="gallery-two__single"> <img
+                src="http://localhost:5173/src/assets/images/home-three/gallery-v2-img3.jpg" alt="" /> <span
                 class="zoom-icon"> <i class="flaticon-expand"></i> </span> </a> <a
-                href="src/assets/images/home-three/gallery-v2-img4.jpg" class="gallery-two__single"> <img
-                src="src/assets/images/home-three/gallery-v2-img4.jpg" alt="" /> <span
+                href="http://localhost:5173/src/assets/images/home-three/gallery-v2-img4.jpg" class="gallery-two__single"> <img
+                src="http://localhost:5173/src/assets/images/home-three/gallery-v2-img4.jpg" alt="" /> <span
                 class="zoom-icon"> <i class="flaticon-expand"></i> </span> </a> <a
-                href="src/assets/images/home-three/gallery-v2-img5.jpg" class="gallery-two__single"> <img
-                src="src/assets/images/home-three/gallery-v2-img5.jpg" alt="" /> <span
+                href="http://localhost:5173/src/assets/images/home-three/gallery-v2-img5.jpg" class="gallery-two__single"> <img
+                src="http://localhost:5173/src/assets/images/home-three/gallery-v2-img5.jpg" alt="" /> <span
                 class="zoom-icon"> <i class="flaticon-expand"></i> </span> </a> <a
-                href="src/assets/images/home-three/gallery-v2-img6.jpg" class="gallery-two__single"> <img
-                src="src/assets/images/home-three/gallery-v2-img6.jpg" alt="" /> <span
+                href="http://localhost:5173/src/assets/images/home-three/gallery-v2-img6.jpg" class="gallery-two__single"> <img
+                src="http://localhost:5173/src/assets/images/home-three/gallery-v2-img6.jpg" alt="" /> <span
                 class="zoom-icon"> <i class="flaticon-expand"></i> </span> </a> <a
-                href="src/assets/images/home-three/gallery-v2-img2.jpg" class="gallery-two__single"> <img
-                src="src/assets/images/home-three/gallery-v2-img2.jpg" alt="" /> <span
+                href="http://localhost:5173/src/assets/images/home-three/gallery-v2-img2.jpg" class="gallery-two__single"> <img
+                src="http://localhost:5173/src/assets/images/home-three/gallery-v2-img2.jpg" alt="" /> <span
                 class="zoom-icon"> <i class="flaticon-expand"></i> </span> </a> <a
-                href="src/assets/images/home-three/gallery-v2-img3.jpg" class="gallery-two__single"> <img
-                src="src/assets/images/home-three/gallery-v2-img3.jpg" alt="" /> <span
+                href="http://localhost:5173/src/assets/images/home-three/gallery-v2-img3.jpg" class="gallery-two__single"> <img
+                src="http://localhost:5173/src/assets/images/home-three/gallery-v2-img3.jpg" alt="" /> <span
                 class="zoom-icon"> <i class="flaticon-expand"></i> </span> </a> <a
-                href="src/assets/images/home-three/gallery-v2-img4.jpg" class="gallery-two__single"> <img
-                src="src/assets/images/home-three/gallery-v2-img4.jpg" alt="" /> <span
+                href="http://localhost:5173/src/assets/images/home-three/gallery-v2-img4.jpg" class="gallery-two__single"> <img
+                src="http://localhost:5173/src/assets/images/home-three/gallery-v2-img4.jpg" alt="" /> <span
                 class="zoom-icon"> <i class="flaticon-expand"></i> </span> </a> </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 <template>
   <main class="overflow-hidden ">
     <!--Start Breadcrumb Style2-->
-    <div class="breadcrumb-area" style="background-image: url(src/assets/images/products-grid/Frame1.png);">
+    <div class="breadcrumb-area" style="background-image: url(http://localhost:5173/src/assets/images/products-grid/Frame1.png);">
       <div class="container">
         <div class="row">
           <div class="col-xl-12">
@@ -27,14 +27,14 @@
           <div class="col-xl-12">
             <div class="product-categories-one__inner">
               <ul>
-                <li v-for="brewery in topBreweries"><a href="#0" class="img-box">
+                <li v-for="brewery in topBreweries"><router-link :to="{name: 'brewery.show', params: {id : brewery.id}}" class="img-box">
                   <div class="inner">
                     <img :src="brewery.logo" alt=""/>
                   </div>
-                </a>
-                  <div class="title"><a href="#0">
+                </router-link>
+                  <div class="title"><router-link :to="{name: 'brewery.show', params: {id : brewery.id}}">
                     <h6>{{brewery.title}}</h6>
-                  </a>
+                  </router-link>
                   </div>
                 </li>
               </ul>
@@ -149,147 +149,7 @@
                   <div class="tab-pane fade show active" id="pills-grid" role="tabpanel"
                        aria-labelledby="pills-grid-tab">
                     <div class="row">
-                      <div v-for="product in products" class="col-xl-4 col-lg-6 col-6 ">
-                        <div class="products-three-single w-100  mt-30">
-                          <div class="products-three-single-img"><a
-                              href="shop-details-3.html" class="d-block"> <img
-                              :src=product.image_url
-                              class="first-img" alt=""/> <img
-                              :src=product.image_url
-                              alt="" class="hover-img"/>
-                          </a>
-                            <div v-for="tag in product.tags" class="products-grid-one__badge-box">
-                              <span class="bg_base badge new ">{{tag.title}}</span>
-                            </div>
-                            <a href="cart.html" class="addcart btn--primary style2">
-                              Добавить в корзину </a>
-                            <div class="products-grid__usefull-links">
-                              <ul>
-                                <li><a href="wishlist.html"> <i class="flaticon-heart">
-                                </i> <span>
-                                                                            wishlist</span> </a></li>
-                                <li><a href="compare.html"> <i
-                                    class="flaticon-left-and-right-arrows"></i>
-                                  <span>
-                                                                            compare</span> </a></li>
-                                <li><a :href="`#popup${product.id}`" class="popup_link"> <i
-                                    class="flaticon-visibility"></i>
-                                  <span> quick view</span>
-                                </a></li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div :id="`popup${product.id}`" class="product-gird__quick-view-popup mfp-hide">
-                            <div class="container">
-                              <div class="row justify-content-between align-items-center">
-                                <div class="col-lg-6">
-                                  <div class="quick-view__left-content">
-                                    <div class="tabs">
-                                      <div class="popup-product-thumb-box">
-                                        <ul>
-                                          <li
-                                              class="tab-nav popup-product-thumb ">
-                                            <a href="#tabb">
-                                              <img :src="product.image_url"
-                                                   alt=""/> </a></li>
-                                          <li v-for="image in product.images"
-                                              class="tab-nav popup-product-thumb">
-                                            <a :href="`#tabb${image.id}`">
-                                              <img :src="image.url"
-                                                   alt=""/> </a></li>
-                                        </ul>
-                                      </div>
-                                      <div class="popup-product-main-image-box">
-                                        <div id="tabb"
-                                             class="tab-item popup-product-image">
-                                          <div
-                                              class="popup-product-single-image">
-                                            <img :src="product.image_url"
-                                                 alt=""/></div>
-                                        </div>
-                                        <div :id="`tabb${image.id}`" v-for="image in product.images"
-                                             class="tab-item popup-product-image">
-                                          <div
-                                              class="popup-product-single-image">
-                                            <img :src="image.url"
-                                                 alt=""/></div>
-                                        </div>
-                                        <button v-if="product.images.length > 0" class="prev"><i class="flaticon-back"></i>
-                                        </button>
-                                        <button v-if="product.images.length > 0" class="next"><i class="flaticon-next"></i>
-                                        </button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-lg-6">
-                                  <div class="popup-right-content">
-                                    <h3>{{ product.title }}</h3>
-                                    <div class="ratting"><i
-                                        class="flaticon-star"></i> <i
-                                        class="flaticon-star"></i> <i
-                                        class="flaticon-star"></i>
-                                      <i class="flaticon-star"></i> <i
-                                          class="flaticon-star"></i>
-                                      <span>(112)</span></div>
-                                    <p class="text"> {{ product.description }}
-                                    </p>
-                                    <div class="price">
-                                      <h2> {{ product.price }} руб</h2>
-                                      <h6> В наличии</h6>
-                                    </div>
-                                    <div class="color-varient"><a href="#0"
-                                                                  class="color-name pink">
-                                      <span>Pink</span> </a> <a href="#0"
-                                                                class="color-name red">
-                                      <span>Red</span> </a>
-                                      <a href="#0"
-                                         class="color-name yellow"><span>Yellow</span>
-                                      </a> <a href="#0" class="color-name blue">
-                                        <span>Blue</span>
-                                      </a> <a href="#0" class="color-name black">
-                                        <span>Black</span> </a></div>
-                                    <div class="add-product">
-                                      <h6>Qty:</h6>
-                                      <div class="button-group">
-                                        <div class="qtySelector text-center">
-                                                                                    <span class="decreaseQty"><i
-                                                                                        class="flaticon-minus"></i>
-                                                                                    </span> <input type="number"
-                                                                                                   class="qtyValue"
-                                                                                                   value="1"/>
-                                          <span class="increaseQty"> <i
-                                              class="flaticon-plus"></i>
-                                                                                    </span></div>
-                                        <button class="btn--primary "> Add to
-                                          Cart
-                                        </button>
-                                      </div>
-                                    </div>
-                                    <div class="payment-method"><a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_1.png"
-                                        alt=""> </a>
-                                      <a href="#0"> <img
-                                          src="src/assets/images/payment_method/method_2.png"
-                                          alt=""> </a> <a href="#0"> <img
-                                          src="src/assets/images/payment_method/method_3.png"
-                                          alt=""> </a>
-                                      <a href="#0"> <img
-                                          src="src/assets/images/payment_method/method_4.png"
-                                          alt=""> </a></div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="products-three-single-content text-center">
-                            <span> {{ product.category.title }}</span>
-                            <h5><a href="shop-details-3.html">{{ product.title }} </a>
-                            </h5>
-                            <p> {{ product.price }} руб</p>
-                          </div>
-                        </div>
-                      </div>
+                      <product-card v-for="product in products" :product="product"></product-card>
                     </div>
                   </div>
                   <div class="tab-pane fade" id="pills-list" role="tabpanel"
@@ -299,9 +159,9 @@
                         <div class="product-grid-two list mt-30 ">
                           <div class="product-grid-two__img">
                             <a href="shop-details-2.html" class="d-block"> <img
-                                src="src/assets/images/home-three/products-1.jpg"
+                                src="http://localhost:5173/src/assets/images/home-three/products-1.jpg"
                                 class="first-img" alt=""/> <img
-                                src="src/assets/images/home-three/products-hover-1.png"
+                                src="http://localhost:5173/src/assets/images/home-three/products-hover-1.png"
                                 alt="" class="hover-img"/> </a>
                             <div class="products-grid-one__badge-box"> <span
                                 class="badge discount">Best</span></div>
@@ -317,17 +177,17 @@
                                           <li
                                               class="tab-nav popup-product-thumb">
                                             <a href="#tab7111111b"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img1.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img1.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tab8111111b"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img2.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img2.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tab9111111b"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img3.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img3.jpg"
                                                 alt=""/> </a></li>
                                         </ul>
                                       </div>
@@ -336,21 +196,21 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img1.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img1.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tab8111111b"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img2.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img2.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tab9111111b"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img3.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img3.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <button class="prev"><i
@@ -409,13 +269,13 @@
                                       </div>
                                     </div>
                                     <div class="payment-method"><a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_1.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_2.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_3.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_4.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                         alt=""> </a></div>
                                   </div>
                                 </div>
@@ -454,7 +314,7 @@
                         <div class="product-grid-two list mt-30">
                           <div class="product-grid-two__img">
                             <a href="shop-details-2.html" class="d-block">
-                              <img src="src/assets/images/home-three/products-2.jpg" alt=""/>
+                              <img src="http://localhost:5173/src/assets/images/home-three/products-2.jpg" alt=""/>
                             </a></div>
                           <div id="popup2z" class="product-gird__quick-view-popup mfp-hide">
                             <div class="container">
@@ -467,17 +327,17 @@
                                           <li
                                               class="tab-nav popup-product-thumb">
                                             <a href="#tab1z"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img2.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img2.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tab2z"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img3.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img3.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tab3z"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img4.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img4.jpg"
                                                 alt=""/> </a></li>
                                         </ul>
                                       </div>
@@ -486,21 +346,21 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img2.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img2.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tab2z"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img3.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img3.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tab3z"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img4.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img4.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <button class="prev"><i
@@ -559,13 +419,13 @@
                                       </div>
                                     </div>
                                     <div class="payment-method"><a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_1.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_2.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_3.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_4.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                         alt=""> </a></div>
                                   </div>
                                 </div>
@@ -601,7 +461,7 @@
                         <div class="product-grid-two list mt-30">
                           <div class="product-grid-two__img">
                             <a href="shop-details-2.html" class="d-block"> <img
-                                src="src/assets/images/home-three/products-3.jpg" alt=""/>
+                                src="http://localhost:5173/src/assets/images/home-three/products-3.jpg" alt=""/>
                             </a>
                             <div class="products-grid-one__badge-box">
                               <span class="bg_base badge new "> New </span>
@@ -618,17 +478,17 @@
                                           <li
                                               class="tab-nav popup-product-thumb">
                                             <a href="#tab4zz"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img3.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img3.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tab5zz"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img4.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img4.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tab6zz"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img5.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img5.jpg"
                                                 alt=""/> </a></li>
                                         </ul>
                                       </div>
@@ -637,21 +497,21 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img3.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img3.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tab5zz"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img4.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img4.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tab6zz"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img5.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img5.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <button class="prev"><i
@@ -710,13 +570,13 @@
                                       </div>
                                     </div>
                                     <div class="payment-method"><a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_1.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_2.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_3.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_4.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                         alt=""> </a></div>
                                   </div>
                                 </div>
@@ -755,7 +615,7 @@
                         <div class="product-grid-two list mt-30">
                           <div class="product-grid-two__img"><a href="shop-details-2.html"
                                                                 class="d-block">
-                            <img src="src/assets/images/home-three/products-4.jpg" alt=""/>
+                            <img src="http://localhost:5173/src/assets/images/home-three/products-4.jpg" alt=""/>
                           </a>
                             <div class="products-grid-one__badge-box"> <span
                                 class="badge discount">-30%</span></div>
@@ -771,17 +631,17 @@
                                           <li
                                               class="tab-nav popup-product-thumb">
                                             <a href="#tab44cc"> <img
-                                                src="src/assets/images/home-two/products-v5-img4.jpg"
+                                                src="http://localhost:5173/src/assets/images/home-two/products-v5-img4.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tab55cc"> <img
-                                                src="src/assets/images/home-two/products-v5-img5.jpg"
+                                                src="http://localhost:5173/src/assets/images/home-two/products-v5-img5.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tab66cc"> <img
-                                                src="src/assets/images/home-two/products-v5-img6.jpg"
+                                                src="http://localhost:5173/src/assets/images/home-two/products-v5-img6.jpg"
                                                 alt=""/> </a></li>
                                         </ul>
                                       </div>
@@ -790,21 +650,21 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/home-two/products-v5-img4.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/home-two/products-v5-img4.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tab55cc"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/home-two/products-v5-img5.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/home-two/products-v5-img5.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tab66cc"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/home-two/products-v5-img6.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/home-two/products-v5-img6.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <button class="prev"><i
@@ -863,13 +723,13 @@
                                       </div>
                                     </div>
                                     <div class="payment-method"><a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_1.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_2.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_3.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_4.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                         alt=""> </a></div>
                                   </div>
                                 </div>
@@ -908,7 +768,7 @@
                         <div class="product-grid-two list mt-30">
                           <div class="product-grid-two__img"><a href="shop-details-2.html"
                                                                 class="d-block"> <img
-                              src="src/assets/images/home-three/products-5.png" alt=""/>
+                              src="http://localhost:5173/src/assets/images/home-three/products-5.png" alt=""/>
                           </a>
                             <div class="products-grid-one__badge-box"> <span
                                 class="badge bg_base new">Hot</span></div>
@@ -924,17 +784,17 @@
                                           <li
                                               class="tab-nav popup-product-thumb">
                                             <a href="#tab444vv"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img5.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img5.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tab555vv"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img6.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img6.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tab666vv"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img7.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img7.jpg"
                                                 alt=""/> </a></li>
                                         </ul>
                                       </div>
@@ -943,21 +803,21 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img5.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img5.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tab555vv"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img6.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img6.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tab666vv"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img7.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img7.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <button class="prev"><i
@@ -1016,13 +876,13 @@
                                       </div>
                                     </div>
                                     <div class="payment-method"><a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_1.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_2.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_3.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_4.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                         alt=""> </a></div>
                                   </div>
                                 </div>
@@ -1061,7 +921,7 @@
                         <div class="product-grid-two list mt-30">
                           <div class="product-grid-two__img"><a href="shop-details-2.html"
                                                                 class="d-block"> <img
-                              src="src/assets/images/home-three/products-6.png" alt=""/>
+                              src="http://localhost:5173/src/assets/images/home-three/products-6.png" alt=""/>
                           </a></div>
                           <div id="popup6bb" class="product-gird__quick-view-popup mfp-hide">
                             <div class="container">
@@ -1074,17 +934,17 @@
                                           <li
                                               class="tab-nav popup-product-thumb">
                                             <a href="#tab12bb"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img6.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img6.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tab13bb"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img7.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img7.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tab14bb"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img8.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img8.jpg"
                                                 alt=""/> </a></li>
                                         </ul>
                                       </div>
@@ -1093,21 +953,21 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img6.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img6.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tab13bb"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img7.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img7.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tab14bb"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img8.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img8.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <button class="prev"><i
@@ -1166,13 +1026,13 @@
                                       </div>
                                     </div>
                                     <div class="payment-method"><a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_1.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_2.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_3.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_4.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                         alt=""> </a></div>
                                   </div>
                                 </div>
@@ -1211,9 +1071,9 @@
                         <div class="product-grid-two list mt-30">
                           <div class="product-grid-two__img"><a href="shop-details-2.html"
                                                                 class="d-block"> <img
-                              src="src/assets/images/home-three/productss2-1.jpg"
+                              src="http://localhost:5173/src/assets/images/home-three/productss2-1.jpg"
                               class="first-img" alt=""/> <img
-                              src="src/assets/images/home-three/productss2-hover-1.png"
+                              src="http://localhost:5173/src/assets/images/home-three/productss2-hover-1.png"
                               alt="" class="hover-img"/> </a>
                             <div class="products-grid-one__badge-box"> <span
                                 class="badge discount">-50%</span></div>
@@ -1229,17 +1089,17 @@
                                           <li
                                               class="tab-nav popup-product-thumb">
                                             <a href="#tab15nn"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img7.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img7.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tab16nn"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img8.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img8.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tab17nn"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img9.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img9.jpg"
                                                 alt=""/> </a></li>
                                         </ul>
                                       </div>
@@ -1248,21 +1108,21 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img7.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img7.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tab16nn"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img8.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img8.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tab17nn"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img9.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img9.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <button class="prev"><i
@@ -1321,13 +1181,13 @@
                                       </div>
                                     </div>
                                     <div class="payment-method"><a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_1.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_2.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_3.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_4.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                         alt=""> </a></div>
                                   </div>
                                 </div>
@@ -1366,9 +1226,9 @@
                         <div class="product-grid-two list mt-30">
                           <div class="product-grid-two__img"><a href="shop-details-2.html"
                                                                 class="d-block"> <img
-                              src="src/assets/images/home-three/productss2-2.jpg"
+                              src="http://localhost:5173/src/assets/images/home-three/productss2-2.jpg"
                               class="first-img" alt=""/> <img
-                              src="src/assets/images/home-three/productss2-hover-2.png"
+                              src="http://localhost:5173/src/assets/images/home-three/productss2-hover-2.png"
                               alt="" class="hover-img"/> </a></div>
                           <div id="popup9mm" class="product-gird__quick-view-popup mfp-hide">
                             <div class="container">
@@ -1381,17 +1241,17 @@
                                           <li
                                               class="tab-nav popup-product-thumb">
                                             <a href="#tabk1mm"> <img
-                                                src="src/assets/images/home-two/products-v5-img8.jpg"
+                                                src="http://localhost:5173/src/assets/images/home-two/products-v5-img8.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tabk2mm"> <img
-                                                src="src/assets/images/home-two/products-v5-img4.jpg"
+                                                src="http://localhost:5173/src/assets/images/home-two/products-v5-img4.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tabk3mm"> <img
-                                                src="src/assets/images/home-two/products-v5-img1.jpg"
+                                                src="http://localhost:5173/src/assets/images/home-two/products-v5-img1.jpg"
                                                 alt=""/> </a></li>
                                         </ul>
                                       </div>
@@ -1400,21 +1260,21 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/home-two/products-v5-img8.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/home-two/products-v5-img8.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tabk2mm"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/home-two/products-v5-img4.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/home-two/products-v5-img4.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tabk3mm"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/home-two/products-v5-img1.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/home-two/products-v5-img1.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <button class="prev"><i
@@ -1473,13 +1333,13 @@
                                       </div>
                                     </div>
                                     <div class="payment-method"><a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_1.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_2.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_3.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_4.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                         alt=""> </a></div>
                                   </div>
                                 </div>
@@ -1515,7 +1375,7 @@
                         <div class="product-grid-two list mt-30">
                           <div class="product-grid-two__img">
                             <a href="shop-details-2.html" class="d-block">
-                              <img src="src/assets/images/home-three/productss2-3.jpg"
+                              <img src="http://localhost:5173/src/assets/images/home-three/productss2-3.jpg"
                                    alt=""/> </a>
                           </div>
                           <div id="popupr1jj" class="product-gird__quick-view-popup mfp-hide">
@@ -1529,17 +1389,17 @@
                                           <li
                                               class="tab-nav popup-product-thumb">
                                             <a href="#tabr1jj"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img9.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img9.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tabr2jj"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img10.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img10.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tabr3jj"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img11.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img11.jpg"
                                                 alt=""/> </a></li>
                                         </ul>
                                       </div>
@@ -1548,21 +1408,21 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img9.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img9.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tabr2jj"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img10.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img10.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tabr3jj"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img11.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img11.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <button class="prev"><i
@@ -1621,13 +1481,13 @@
                                       </div>
                                     </div>
                                     <div class="payment-method"><a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_1.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_2.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_3.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_4.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                         alt=""> </a></div>
                                   </div>
                                 </div>
@@ -1663,7 +1523,7 @@
                         <div class="product-grid-two list mt-30">
                           <div class="product-grid-two__img"><a href="shop-details-2.html"
                                                                 class="d-block">
-                            <img src="src/assets/images/home-three/productss2-4.jpg"
+                            <img src="http://localhost:5173/src/assets/images/home-three/productss2-4.jpg"
                                  alt=""/> </a></div>
                           <div id="popupr11hh"
                                class="product-gird__quick-view-popup mfp-hide">
@@ -1677,17 +1537,17 @@
                                           <li
                                               class="tab-nav popup-product-thumb">
                                             <a href="#tabr11hh"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img10.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img10.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tabr22hh"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img11.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img11.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tabr33hh"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img9.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img9.jpg"
                                                 alt=""/> </a></li>
                                         </ul>
                                       </div>
@@ -1696,21 +1556,21 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img10.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img10.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tabr22hh"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img11.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img11.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tabr33hh"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img9.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img9.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <button class="prev"><i
@@ -1769,13 +1629,13 @@
                                       </div>
                                     </div>
                                     <div class="payment-method"><a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_1.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_2.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_3.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_4.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                         alt=""> </a></div>
                                   </div>
                                 </div>
@@ -1811,7 +1671,7 @@
                         <div class="product-grid-two list mt-30">
                           <div class="product-grid-two__img"><a href="shop-details-2.html"
                                                                 class="d-block"> <img
-                              src="src/assets/images/home-three/productss3-1.jpg"
+                              src="http://localhost:5173/src/assets/images/home-three/productss3-1.jpg"
                               alt=""/> </a></div>
                           <div id="popupr111g"
                                class="product-gird__quick-view-popup mfp-hide">
@@ -1825,17 +1685,17 @@
                                           <li
                                               class="tab-nav popup-product-thumb">
                                             <a href="#tabr111g"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img11.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img11.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tabr222g"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img10.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img10.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tabr333g"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img9.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img9.jpg"
                                                 alt=""/> </a></li>
                                         </ul>
                                       </div>
@@ -1844,21 +1704,21 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img11.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img11.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tabr222g"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img9.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img9.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tabr333g"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img10.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img10.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <button class="prev"><i
@@ -1917,13 +1777,13 @@
                                       </div>
                                     </div>
                                     <div class="payment-method"><a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_1.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_2.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_3.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_4.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                         alt=""> </a></div>
                                   </div>
                                 </div>
@@ -1959,7 +1819,7 @@
                         <div class="product-grid-two list mt-30">
                           <div class="product-grid-two__img"><a href="shop-details-2.html"
                                                                 class="d-block"> <img
-                              src="src/assets/images/home-three/productss3-2.jpg"
+                              src="http://localhost:5173/src/assets/images/home-three/productss3-2.jpg"
                               alt=""/> </a></div>
                           <div id="popupr1111gg"
                                class="product-gird__quick-view-popup mfp-hide">
@@ -1973,17 +1833,17 @@
                                           <li
                                               class="tab-nav popup-product-thumb">
                                             <a href="#tabr1111gg"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img9.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img9.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tabr2222gg"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img8.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img8.jpg"
                                                 alt=""/> </a></li>
                                           <li
                                               class="tab-nav popup-product-thumb ">
                                             <a href="#tabr3333gg"> <img
-                                                src="src/assets/images/shop/shop-grid-page-img8.jpg"
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img8.jpg"
                                                 alt=""/> </a></li>
                                         </ul>
                                       </div>
@@ -1992,21 +1852,21 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img9.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img9.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tabr2222"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img8.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img8.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <div id="tabr3333"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="src/assets/images/shop/shop-grid-page-img7.jpg"
+                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img7.jpg"
                                                  alt=""/></div>
                                         </div>
                                         <button class="prev"><i
@@ -2065,13 +1925,13 @@
                                       </div>
                                     </div>
                                     <div class="payment-method"><a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_1.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_1.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_2.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_2.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_3.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_3.png"
                                         alt=""> </a> <a href="#0"> <img
-                                        src="src/assets/images/payment_method/method_4.png"
+                                        src="http://localhost:5173/src/assets/images/payment_method/method_4.png"
                                         alt=""> </a></div>
                                   </div>
                                 </div>
@@ -2133,8 +1993,12 @@
 </template>
 
 <script>
+import ProductCard from "./ProductCard.vue";
 export default {
   name: "Index",
+  components: {
+    ProductCard
+  },
 
   mounted() {
     $(document).trigger('changed')
