@@ -1970,17 +1970,25 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-12 d-flex justify-content-center wow fadeInUp animated">
+              <div v-if="this.pagination.length != 0" class="col-12 d-flex justify-content-center wow fadeInUp animated">
                 <ul class="pagination text-center">
-                  <li class="next"><a href="#0"><i class="flaticon-left-arrows"
-                                                   aria-hidden="true"></i> </a></li>
-                  <li><a href="#0">1</a></li>
-                  <li><a href="#0" class="active">2</a></li>
-                  <li><a href="#0">3</a></li>
-                  <li><a href="#0">...</a></li>
-                  <li><a href="#0">10</a></li>
-                  <li class="next"><a href="#0"><i class="flaticon-next-1"
-                                                   aria-hidden="true"></i> </a></li>
+                  <li v-if="this.pagination.current_page != 1" class="next">
+                    <a @click.prevent="getProductsByFilter(1)">
+                    <i class="flaticon-left-arrows" aria-hidden="true"></i>
+                    </a>
+                  </li>
+
+                  <li v-for="link in this.notFullLinks">
+                    <a @click.prevent="getProductsByFilter(link.label)" :class="link.active? 'active': null">
+                      {{link.label}}
+                    </a>
+                  </li>
+
+                  <li v-if="this.pagination.current_page != this.pagination.links.length - 2" class="next">
+                    <a @click.prevent="getProductsByFilter(this.pagination.links[this.pagination.links.length-2].label)">
+                      <i class="flaticon-arrow-right"></i>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -1997,13 +2005,12 @@ import ProductCard from "./ProductCard.vue";
 export default {
   name: "Index",
   components: {
-    ProductCard
+    ProductCard,
   },
 
   mounted() {
     $(document).trigger('changed')
-    this.getProducts();
-    this.getFilterList();
+    this.getFilterList(this.getProductsByFilter);
     this.getTopBreweries();
   },
 
@@ -2017,7 +2024,7 @@ export default {
       });
     },
 
-    getProductsByFilter() {
+    getProductsByFilter(page = 1) {
       let prices = $('#priceRange').val();
 
       prices = prices.slice(0, prices.length-4).split(' - ');
@@ -2027,9 +2034,13 @@ export default {
         'tags' : this.tags,
         'prices' : prices,
         'breweries' : this.breweries,
+        'page' : page
       }).then(
           res => {
             this.products = res.data.data;
+            this.pagination = res.data.meta;
+            this.notFullLinks = this.pagination.links.slice(1, -1);
+            console.log(this.pagination);
           }
       )
           .finally(v => {
@@ -2037,18 +2048,7 @@ export default {
           });
     },
 
-    getProducts() {
-      this.axios.get('http://shop/api/products').then(
-          res => {
-            this.products = res.data.data;
-          }
-      )
-          .finally(v => {
-            $(document).trigger('changed')
-          });
-    },
-
-    getFilterList(){
+    getFilterList(callback){
       this.axios.get('http://shop/api/filters').then(
           res => {
             this.filterList = res.data;
@@ -2063,6 +2063,7 @@ export default {
                 }
               });
               $("#priceRange").val($("#price-range").slider("values", 0) + " - " + $("#price-range").slider("values", 1) + " руб");
+              callback();
             };
           }
       )
@@ -2080,7 +2081,9 @@ export default {
       categories: [],
       tags: [],
       prices: [],
-      breweries: []
+      breweries: [],
+      pagination: [],
+      notFullLinks: [],
     }
   }
 }

@@ -37,37 +37,33 @@
                 <div class="tabs">
                   <div class="popup-product-thumb-box">
                     <ul>
-                      <li
-                          class="tab-nav popup-product-thumb ">
+                      <li class="tab-nav popup-product-thumb ">
                         <a href="#tabb">
-                          <img :src="product.image_url"
-                               alt=""/> </a></li>
-                      <li v-for="image in product.images"
-                          class="tab-nav popup-product-thumb">
-                        <a :href="`#tabb${image.id}`">
-                          <img :src="image.url"
-                               alt=""/> </a></li>
+                          <img :src="product.image_url" alt=""/>
+                        </a>
+                      </li>
+                      <li v-if="product.images.length > 0" class="tab-nav popup-product-thumb">
+                        <a href="#tabb1">
+                          <img :src="product.images[0].url" alt=""/>
+                        </a>
+                      </li>
                     </ul>
                   </div>
                   <div class="popup-product-main-image-box">
-                    <div id="tabb"
-                         class="tab-item popup-product-image">
-                      <div
-                          class="popup-product-single-image">
-                        <img :src="product.image_url"
-                             alt=""/></div>
+                    <div class="tab-item popup-product-image" id="tabb">
+                      <div  class="popup-product-single-image">
+                        <img :src="product.image_url" alt=""/>
+                      </div>
                     </div>
-                    <div :id="`tabb${image.id}`" v-for="image in product.images"
-                         class="tab-item popup-product-image">
-                      <div
-                          class="popup-product-single-image">
-                        <img :src="image.url"
-                             alt=""/></div>
+
+                    <div v-if="product.images.length > 0" class="tab-item popup-product-image" id="tabb1">
+                      <div class="popup-product-single-image">
+                        <img :src="product.images[0].url" alt=""/>
+                      </div>
                     </div>
-                    <button v-if="product.images.length > 0" class="prev"><i class="flaticon-back"></i>
-                    </button>
-                    <button v-if="product.images.length > 0" class="next"><i class="flaticon-next"></i>
-                    </button>
+
+                    <button v-if="product.images.length > 0" class="prev"><i class="flaticon-back"></i></button>
+                    <button v-if="product.images.length > 0" class="next"><i class="flaticon-next"></i></button>
                   </div>
                 </div>
               </div>
