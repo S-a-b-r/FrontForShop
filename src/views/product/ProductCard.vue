@@ -38,27 +38,38 @@
                   <div class="popup-product-thumb-box">
                     <ul>
                       <li class="tab-nav popup-product-thumb ">
-                        <a href="#tabb">
+                        <a href="#tabb11">
                           <img :src="product.image_url" alt=""/>
                         </a>
                       </li>
                       <li v-if="product.images.length > 0" class="tab-nav popup-product-thumb">
-                        <a href="#tabb1">
+                        <a href="#tabb22">
                           <img :src="product.images[0].url" alt=""/>
+                        </a>
+                      </li>
+                      <li v-if="product.images.length > 1" class="tab-nav popup-product-thumb">
+                        <a href="#tabb33">
+                          <img :src="product.images[1].url" alt=""/>
                         </a>
                       </li>
                     </ul>
                   </div>
                   <div class="popup-product-main-image-box">
-                    <div class="tab-item popup-product-image" id="tabb">
+                    <div class="tab-item popup-product-image" id="tabb11">
                       <div  class="popup-product-single-image">
                         <img :src="product.image_url" alt=""/>
                       </div>
                     </div>
 
-                    <div v-if="product.images.length > 0" class="tab-item popup-product-image" id="tabb1">
+                    <div v-if="product.images.length > 0" class="tab-item popup-product-image" id="tabb22">
                       <div class="popup-product-single-image">
                         <img :src="product.images[0].url" alt=""/>
+                      </div>
+                    </div>
+
+                    <div v-if="product.images.length > 1" class="tab-item popup-product-image" id="tabb33">
+                      <div class="popup-product-single-image">
+                        <img :src="product.images[1].url" alt=""/>
                       </div>
                     </div>
 

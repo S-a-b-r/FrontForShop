@@ -1,7 +1,8 @@
 <template>
   <main class="overflow-hidden ">
     <!--Start Breadcrumb Style2-->
-    <div class="breadcrumb-area" style="background-image: url(http://localhost:5173/src/assets/images/products-grid/Frame1.png);">
+    <div class="breadcrumb-area"
+         style="background-image: url(http://localhost:5173/src/assets/images/products-grid/Frame1.png);">
       <div class="container">
         <div class="row">
           <div class="col-xl-12">
@@ -27,14 +28,16 @@
           <div class="col-xl-12">
             <div class="product-categories-one__inner">
               <ul>
-                <li v-for="brewery in topBreweries"><router-link :to="{name: 'brewery.show', params: {id : brewery.id}}" class="img-box">
-                  <div class="inner">
-                    <img :src="brewery.logo" alt=""/>
-                  </div>
-                </router-link>
-                  <div class="title"><router-link :to="{name: 'brewery.show', params: {id : brewery.id}}">
-                    <h6>{{brewery.title}}</h6>
+                <li v-for="brewery in topBreweries">
+                  <router-link :to="{name: 'brewery.show', params: {id : brewery.id}}" class="img-box">
+                    <div class="inner">
+                      <img :src="brewery.logo" alt=""/>
+                    </div>
                   </router-link>
+                  <div class="title">
+                    <router-link :to="{name: 'brewery.show', params: {id : brewery.id}}">
+                      <h6>{{ brewery.title }}</h6>
+                    </router-link>
                   </div>
                 </li>
               </ul>
@@ -59,7 +62,7 @@
                     <form>
                       <div v-for="category in filterList.categories" class="form-group">
                         <input v-model="categories" :value="category.id" type="checkbox" :id="category.id + 'category'">
-                        <label :for="category.id + 'category'">{{category.title}}</label></div>
+                        <label :for="category.id + 'category'">{{ category.title }}</label></div>
                     </form>
                   </div>
                 </div>
@@ -69,7 +72,7 @@
                     <form>
                       <div v-for="brewery in filterList.breweries" class="form-group">
                         <input v-model="breweries" :value="brewery.id" type="checkbox" :id="brewery.id + 'brewery'">
-                        <label :for="brewery.id + 'brewery'">{{brewery.title}}</label></div>
+                        <label :for="brewery.id + 'brewery'">{{ brewery.title }}</label></div>
                     </form>
                   </div>
                 </div>
@@ -86,12 +89,12 @@
                 <div class="single-sidebar-box mt-30 wow fadeInUp animated ">
                   <h4>Tags</h4>
                   <div class="checkbox-item">
-                      <div v-for="tag in filterList.tags" class="form-group">
-                        <input v-model="tags" :value="tag.id" type="checkbox" :id="tag.id + 'tag'">
-                        <label :for="tag.id + 'tag'">{{tag.title}}</label></div>
+                    <div v-for="tag in filterList.tags" class="form-group">
+                      <input v-model="tags" :value="tag.id" type="checkbox" :id="tag.id + 'tag'">
+                      <label :for="tag.id + 'tag'">{{ tag.title }}</label></div>
                   </div>
                   <div class="slider-box">
-                    <button class="filterbtn" type="submit" @click.prevent="getProductsByFilter"> Filter </button>
+                    <button class="filterbtn" type="submit" @click.prevent="getProductsByFilter"> Filter</button>
                   </div>
                 </div>
               </div>
@@ -105,19 +108,20 @@
                   <div class="left-box wow fadeInUp animated">
                     <p>Showing 1–12 of 50 Results</p>
                   </div>
-                  <div
-                      class="right-box justify-content-md-between justify-content-center wow fadeInUp animated">
+                  <div class="right-box justify-content-md-between justify-content-center wow fadeInUp animated">
                     <div class="short-by">
                       <div class="select-box">
-                        <select class="wide">
-                          <option data-display="Short by latest">Featured</option>
-                          <option value="1">Best selling</option>
-                          <option value="2">Alphabetically, A-Z</option>
-                          <option value="3">Alphabetically, Z-A</option>
-                          <option value="3">Price, low to high</option>
-                          <option value="3">Price, high to low</option>
-                          <option value="3">Date, old to new</option>
-                        </select>
+                        <div class="nice-select wide" tabindex="0">
+                          <span class="current">Date, new to old</span>
+                          <ul class="list">
+                            <li data-value="1" class="option selected" @click="sortBy = 1; getProductsByFilter()">Date, new to old</li>
+                            <li data-value="2" class="option" @click="sortBy = 2; getProductsByFilter()">Date, old to new</li>
+                            <li data-value="3" class="option" @click="sortBy = 3; getProductsByFilter()">Alphabetically, A-Z</li>
+                            <li data-value="4" class="option" @click="sortBy = 4; getProductsByFilter()">Alphabetically, Z-A</li>
+                            <li data-value="5" class="option" @click="sortBy = 5; getProductsByFilter()">Price, low to high</li>
+                            <li data-value="6" class="option" @click="sortBy = 6; getProductsByFilter()">Price, high to low</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div class="product-view-style d-flex justify-content-md-between justify-content-center">
@@ -196,22 +200,25 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img1.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img1.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tab8111111b"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img2.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img2.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tab9111111b"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img3.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img3.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <button class="prev"><i
                                             class="flaticon-back"></i>
@@ -346,22 +353,25 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img2.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img2.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tab2z"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img3.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img3.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tab3z"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img4.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img4.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <button class="prev"><i
                                             class="flaticon-back"></i>
@@ -497,22 +507,25 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img3.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img3.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tab5zz"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img4.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img4.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tab6zz"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img5.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img5.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <button class="prev"><i
                                             class="flaticon-back"></i>
@@ -650,22 +663,25 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/home-two/products-v5-img4.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/home-two/products-v5-img4.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tab55cc"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/home-two/products-v5-img5.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/home-two/products-v5-img5.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tab66cc"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/home-two/products-v5-img6.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/home-two/products-v5-img6.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <button class="prev"><i
                                             class="flaticon-back"></i>
@@ -803,22 +819,25 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img5.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img5.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tab555vv"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img6.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img6.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tab666vv"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img7.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img7.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <button class="prev"><i
                                             class="flaticon-back"></i>
@@ -953,22 +972,25 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img6.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img6.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tab13bb"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img7.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img7.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tab14bb"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img8.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img8.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <button class="prev"><i
                                             class="flaticon-back"></i>
@@ -1108,22 +1130,25 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img7.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img7.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tab16nn"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img8.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img8.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tab17nn"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img9.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img9.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <button class="prev"><i
                                             class="flaticon-back"></i>
@@ -1260,22 +1285,25 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/home-two/products-v5-img8.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/home-two/products-v5-img8.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tabk2mm"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/home-two/products-v5-img4.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/home-two/products-v5-img4.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tabk3mm"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/home-two/products-v5-img1.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/home-two/products-v5-img1.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <button class="prev"><i
                                             class="flaticon-back"></i>
@@ -1408,22 +1436,25 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img9.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img9.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tabr2jj"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img10.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img10.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tabr3jj"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img11.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img11.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <button class="prev"><i
                                             class="flaticon-back"></i>
@@ -1556,22 +1587,25 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img10.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img10.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tabr22hh"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img11.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img11.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tabr33hh"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img9.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img9.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <button class="prev"><i
                                             class="flaticon-back"></i>
@@ -1704,22 +1738,25 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img11.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img11.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tabr222g"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img9.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img9.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tabr333g"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img10.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img10.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <button class="prev"><i
                                             class="flaticon-back"></i>
@@ -1852,22 +1889,25 @@
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img9.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img9.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tabr2222"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img8.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img8.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <div id="tabr3333"
                                              class="tab-item popup-product-image">
                                           <div
                                               class="popup-product-single-image">
-                                            <img src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img7.jpg"
-                                                 alt=""/></div>
+                                            <img
+                                                src="http://localhost:5173/src/assets/images/shop/shop-grid-page-img7.jpg"
+                                                alt=""/></div>
                                         </div>
                                         <button class="prev"><i
                                             class="flaticon-back"></i>
@@ -1970,17 +2010,18 @@
               </div>
             </div>
             <div class="row">
-              <div v-if="this.pagination.length != 0" class="col-12 d-flex justify-content-center wow fadeInUp animated">
+              <div v-if="this.pagination.length != 0"
+                   class="col-12 d-flex justify-content-center wow fadeInUp animated">
                 <ul class="pagination text-center">
                   <li v-if="this.pagination.current_page != 1" class="next">
                     <a @click.prevent="getProductsByFilter(1)">
-                    <i class="flaticon-left-arrows" aria-hidden="true"></i>
+                      <i class="flaticon-left-arrows" aria-hidden="true"></i>
                     </a>
                   </li>
 
                   <li v-for="link in this.notFullLinks">
                     <a @click.prevent="getProductsByFilter(link.label)" :class="link.active? 'active': null">
-                      {{link.label}}
+                      {{ link.label }}
                     </a>
                   </li>
 
@@ -2002,6 +2043,7 @@
 
 <script>
 import ProductCard from "./ProductCard.vue";
+
 export default {
   name: "Index",
   components: {
@@ -2015,7 +2057,7 @@ export default {
   },
 
   methods: {
-    getTopBreweries(){
+    getTopBreweries() {
       this.axios.get('http://shop/api/top-breweries').then(
           res => {
             this.topBreweries = res.data.data;
@@ -2027,20 +2069,20 @@ export default {
     getProductsByFilter(page = 1) {
       let prices = $('#priceRange').val();
 
-      prices = prices.slice(0, prices.length-4).split(' - ');
+      prices = prices.slice(0, prices.length - 4).split(' - ');
 
-      this.axios.post('http://shop/api/products/filter',{
-        'categories' : this.categories,
-        'tags' : this.tags,
-        'prices' : prices,
-        'breweries' : this.breweries,
-        'page' : page
+      this.axios.post('http://shop/api/products/filter', {
+        'sorted_by': this.sortBy,
+        'categories': this.categories,
+        'tags': this.tags,
+        'prices': prices,
+        'breweries': this.breweries,
+        'page': page,
       }).then(
           res => {
             this.products = res.data.data;
             this.pagination = res.data.meta;
             this.notFullLinks = this.pagination.links.slice(1, -1);
-            console.log(this.pagination);
           }
       )
           .finally(v => {
@@ -2048,7 +2090,7 @@ export default {
           });
     },
 
-    getFilterList(callback){
+    getFilterList(callback) {
       this.axios.get('http://shop/api/filters').then(
           res => {
             this.filterList = res.data;
@@ -2064,7 +2106,8 @@ export default {
               });
               $("#priceRange").val($("#price-range").slider("values", 0) + " - " + $("#price-range").slider("values", 1) + " руб");
               callback();
-            };
+            }
+            ;
           }
       )
           .finally(v => {
@@ -2084,6 +2127,7 @@ export default {
       breweries: [],
       pagination: [],
       notFullLinks: [],
+      sortBy: '1'
     }
   }
 }
