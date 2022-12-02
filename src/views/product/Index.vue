@@ -106,11 +106,20 @@
                 <div
                     class="shop-grid-page-top-info p-0 justify-content-md-between justify-content-center">
                   <div class="left-box wow fadeInUp animated">
-                    <p>Showing 1–12 of 50 Results</p>
+                    <p>Showing {{pagination.from}} - {{pagination.to}} of {{pagination.total}} Results</p>
                   </div>
                   <div class="right-box justify-content-md-between justify-content-center wow fadeInUp animated">
                     <div class="short-by">
                       <div class="select-box">
+                        <select class="wide" display="none">
+                          <option data-display="Short by latest">Featured</option>
+                          <option value="1">Best selling</option>
+                          <option value="2">Alphabetically, A-Z</option>
+                          <option value="3">Alphabetically, Z-A</option>
+                          <option value="3">Price, low to high</option>
+                          <option value="3">Price, high to low</option>
+                          <option value="3">Date, old to new</option>
+                        </select>
                         <div class="nice-select wide" tabindex="0">
                           <span class="current">Date, new to old</span>
                           <ul class="list">
